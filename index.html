@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S DS22 PL 🤙</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  </head>
+  <body>
+    <h1>MY BACK TO SCHOOL WEEK</h1>
+
+    <h5>Select from the buttons below to download the Visualisation.</h5>
+    <!-- Button for PDF and PowerPoint on dashboard -->
+    <div>
+      <button id="exportPDF">Generate PDF</button>
+      <button id="exportPP">Generate PowerPoint</button>
+    </div>
+
+    <hr />
+    <div>
+      <h2>Filters</h2>
+      <input type="number" placeholder="Min Value" id="minValue" />
+      <input type="number" placeholder="Max Value" id="maxValue" />
+      <button id="filterButton">Filter</button>
+    </div>
+
+    <!-- this is where we are going to put the tableau dashboard -->
+    <div id="vizContainer"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
